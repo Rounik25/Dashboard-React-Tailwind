@@ -5,8 +5,8 @@ import { KPI3 } from "../components/KPI/KPI3"
 export function KPI({data}){
     return (
         <div className="flex">
-            <KPI1 data={data} />
-            <KPI2 data={data}/>
+            <KPI1 />
+            <KPI2 />
             <KPI3 data={data}/>
         </div>
     )

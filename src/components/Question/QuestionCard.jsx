@@ -1,5 +1,7 @@
-export function QuestionCard({data, text, id}){
-    const responses = data.responses
+import { getResponses } from "../../utils/getResponses";
+
+export function QuestionCard({text, id}){
+    const responses = getResponses()
     let rating = 0;
     responses.map(response => {
         if (id === 1) rating+=response.q1_rating

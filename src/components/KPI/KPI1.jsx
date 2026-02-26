@@ -1,5 +1,7 @@
-export function KPI1({data}){
-    const responses = data.responses
+import { getResponses } from "../../utils/getResponses"
+
+export function KPI1(){
+    const responses = getResponses()
     let rating=0
     responses.map(response => {
         rating = rating + response.q1_rating + response.q2_rating + response.q3_rating

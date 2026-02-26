@@ -1,9 +1,10 @@
 import Chart from "./Chart"
+import { getResponses } from "../../utils/getResponses"
 
-export function KPI2({data}){
+export function KPI2(){
     let countArr =[0,0,0,0,0]
 
-    const responses = data.responses
+    const responses = getResponses()
 
     responses.map(response => {
         countArr[response.q1_rating-1]++

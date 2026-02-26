@@ -10,7 +10,7 @@ export function Question({data}){
                 {questions.map(question => {
                     {id++}
                     return(
-                        <QuestionCard key={id} data={data} text={question.text} id={id} />
+                        <QuestionCard key={id} text={question.text} id={id} />
                     )
                 })}
             </div>

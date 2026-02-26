@@ -1,8 +1,9 @@
 import { useMemo } from "react"
 import { format, parseISO } from "date-fns";
+import { getResponses } from "../../utils/getResponses";
 
-export function Table({data, filter}){
-    const responses = data.responses
+export function Table({filter}){
+    const responses = getResponses()
     const filteredData = useMemo(() => {
         return responses.filter(response =>
         filter.includes(response.country)
