@@ -9,7 +9,7 @@ export function QuestionCard({data, text, id}){
     const avgRating = (rating/responses.length).toFixed(2)
 
     return(
-        <div className="flex flex-col m-5 bg-gray-200 p-5 rounded-xl shadow-lg border-2 border-gray-400 w-3/10 justify-around text-center">
+        <div className="flex flex-col m-5 bg-gray-200 hover:bg-gray-100 p-5 rounded-xl shadow-lg border-2 border-gray-400 w-3/10 justify-around text-center">
             <div className="text-xl">{text}</div>
             <div className="text-xl">AVERAGE RATING: {avgRating}</div>
         </div>
