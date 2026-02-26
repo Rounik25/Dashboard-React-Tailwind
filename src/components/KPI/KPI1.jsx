@@ -6,7 +6,7 @@ export function KPI1({data}){
     })
     rating = rating / (responses.length * 3)
     return (
-        <div className="flex m-10 bg-white p-5 rounded-xl shadow-lg border-2 border-gray-400 w-3/10 justify-around">
+        <div className="flex m-5 bg-white p-5 rounded-xl shadow-lg border-2 border-gray-400 w-3/10 justify-around">
             <div className="flex flex-col justify-center items-center text-center m-5 ">
                 <div className="flex h-20 items-center text-4xl">
                     {Object.keys(responses).length}

@@ -20,11 +20,8 @@ export function KPI2({data}){
         })
     }
 
-    console.log(chartData)
-
-
     return (
-        <div className="flex m-10 bg-white rounded-xl shadow-lg border-2 border-gray-400 w-3/10 justify-around">
+        <div className="flex m-5 bg-white rounded-xl shadow-lg border-2 border-gray-400 w-3/10 justify-around">
             <Chart data={chartData} />
         </div>
     )

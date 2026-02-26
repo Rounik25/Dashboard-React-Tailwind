@@ -9,8 +9,8 @@ function App() {
     <div className="bg-gray-300 h-screen">
       <Header data={data} />
       <KPI data={data} />
-      <Question />
-      <FilteredData />
+      <Question data={data} />
+      <FilteredData data={data} />
     </div>
   ) 
 }
