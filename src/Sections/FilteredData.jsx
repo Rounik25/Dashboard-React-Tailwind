@@ -14,10 +14,10 @@ export function FilteredData({data}){
     
     return (
         <div className="flex m-5 bg-white p-5 rounded-xl shadow-lg border-2 border-gray-400  justify-around">
-            <div className="w-9/10 m-5 bg-gray-200">
-                <Table filter={filter} />
+            <div className="w-9/10 m-5 shadow-lg">
+                <Table data={data} filter={filter} />
             </div>
-            <div className="w-1/10 m-5">
+            <div className="w-1/10 m-5 shadow-lg border-3 border-gray-300 rounded-t-2xl h-fit">
                 <Filter data={data} setFilter={setFilter} />
             </div>
         </div>
